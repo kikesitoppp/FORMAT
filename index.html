@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje Importante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enrique te quiere decir algo demasiado importante así que pon atención</h1>
+        <button id="revealButton">Haz click para saber lo que quiere decirte</button>
+        <div id="message" class="hidden">
+            <div class="card">
+                <p>Hola mi amor, quiero empezarte diciendo que te quiero mucho y espero que estes teniendo un lindo día. Por segundo quiero decirte que a pesar de que la estés pasando mal siempre te apoyaré sea lo que sea, tu eres un niña súper fuerte y puedes con todo, no dejes de tener la esencia que tu tienes, eres una buena persona y yo doy gracias a la vida por haberme cruzado contigo <3. de tu mejor admirador, tu marido y tu gordito </p>
+                <div class="hearts">❤️❤️❤️❤️❤️❤️</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('revealButton').addEventListener('click', function() {
+            document.getElementById('message').classList.remove('hidden');
+            document.getElementById('revealButton').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
